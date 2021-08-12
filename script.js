@@ -1,7 +1,6 @@
-var canvas = document.querySelector('canvas'); //localiza o elemento canvas na DOM
+var canvas = document.querySelector('canvas'); //localiza o elemento canvas no html
 var contexto = canvas.getContext('2d'); //determinando o modelo do canvas
 var catX = catY = hyp = 0;
-
 
 var gravity = 0.1 //valor da gravidade aplicada
 
@@ -54,7 +53,6 @@ function loop(){
     render();
 }
 
-
 function update(){
     //aplicar gravidade se held = T
     if(!ball.held){
@@ -82,7 +80,6 @@ function update(){
         }*/
         ball.vx *= -0.8;
     }
-
 }
 
 //visual da bola
